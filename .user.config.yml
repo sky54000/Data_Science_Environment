@@ -1,8 +1,0 @@
-version: "2"
-services:
-  user_services:
-    build:
-      context: src/
-      args:
-        UID: 501
-    user: "501"
