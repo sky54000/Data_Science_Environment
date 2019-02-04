@@ -8,7 +8,7 @@ A Data Science Environment cross platform with tensorflow and keras.
 - [Documentation](#documentation)
 
 ## Description
-
+A data science environment ready to use. It already contains tensorflow and keras working on both MacOS and Linux operating systems. It is simple to install and use. It offer to code on Jupyter-Notebook in python with simple access to tensorflow and keras functions.
 
 # Use it
 
