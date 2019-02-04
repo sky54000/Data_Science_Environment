@@ -1,0 +1,17 @@
+name: conda_env
+channels:
+- defaults
+dependencies:
+- python=3.5
+- Jupyterlab=0.35.0
+- Jupyter
+- Theano
+- numpy=1.15
+- scipy=1.2.0
+- pandas=0.24.0
+- matplotlib=3.0.2
+- pip:
+  - jupyterlab=0.35.4
+  - jupyterthemes=0.20.0
+  - sklearn=0.20.2
+  - opencv-python=4.0.0.21
