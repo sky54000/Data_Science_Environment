@@ -5,7 +5,7 @@ UP=up -d
 RM=rm -rf
 NAME_ERROR_MSG="Error service must be precise(eg. make exec service=<CONTAINER_NAME>)"
 
-all: .user.config.yml down build up
+all: down build up
 
 build:
 	$(DC) $(BUILD)
@@ -28,13 +28,3 @@ ifndef service
 else
 	$(DC) logs -f $(serice)
 endif
-
-.user.config.yml:
-		@echo 'version: "2"'            > $@
-		@echo 'services:'               >> $@
-		@echo '  user_services:'        >> $@
-		@echo '    build:'              >> $@
-		@echo '      context: src/'     >> $@
-		@echo '      args:'			        >> $@
-		@echo '        UID: '$(shell id -u)   >> $@
-		@echo '    user: "'$(shell id -u)'"'  >> $@
